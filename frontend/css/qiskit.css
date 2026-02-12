@@ -1,0 +1,117 @@
+.testing { 
+    margin: 10; 
+    display: flex; 
+    font-family: 'Segoe UI', sans-serif; 
+    background: white;
+    /* background: #1e1e1e;  */
+    /* color: white;  */
+}
+
+/* 左側工具欄 */
+#componentPackage { 
+    width: 100px; 
+    background: #E8E8E8; 
+    border-right: 1px solid #444; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 20px; 
+}
+
+/* 主工作區 */
+#workspace { 
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+#toolbar { 
+    height: 60px; 
+    background: #E8E8E8; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px; 
+    gap: 15px; 
+    border-bottom: 1px solid #444; 
+}
+
+#canvas-container { 
+    flex-grow: 1; 
+    background: white; 
+    position: relative; 
+}
+
+input { 
+    background: #606060; 
+    border: 1px solid #555; 
+    color: white; 
+    padding: 5px; 
+    width: 150px; 
+    border-radius: 4px; 
+}
+
+button { 
+    background: #0078d4; 
+    color: white; 
+    border: none; 
+    padding: 6px 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+button:hover { 
+    background: #0086f0; 
+}
+
+
+
+
+
+/* 統一容器大小 */
+.gate-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+/* Target Gate (⊕) */
+.icon-target {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+.icon-target::before, .icon-target::after {
+    content: '';
+    position: absolute;
+    background: black;
+}
+.icon-target::before { /* 直線 */
+    width: 2px; height: 20px;
+    left: 9px; top: 0;
+}
+.icon-target::after { /* 橫線 */
+    width: 20px; height: 2px;
+    left: 0; top: 9px;
+}
+
+/* Black (●) */
+.icon-control-1 {
+    width: 12px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+}
+
+/* White (○) */
+.icon-control-0 {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 50%;
+}

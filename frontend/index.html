@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>我的全棧留言板</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadData()">
+    
+    <button onclick="location.href='index.html'">home</button>
+    <button onclick="location.href='qiskit.html'">Qiskit PhaseOracle</button>
+
+    <h1>🚀 全棧 API 實驗室</h1>
+
+    <div class="card">
+        <h3>新增留言</h3>
+        <div class="input-group">
+            <input type="text" id="userInput" placeholder="想說點什麼嗎？">
+            <button onclick="postData()">送出資料</button>
+        </div>
+    </div>
+
+    <h3>所有留言紀錄</h3>
+    <div id="messageList">載入中...</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
