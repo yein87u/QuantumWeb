@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>qisket實驗</title>
+    <link rel="stylesheet" href="css/qiskit.css">
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+    <script src="js/qiskit.js" defer></script>
+</head>
+
+<body>
+    <div class='main-container'>
+        <button onclick="location.href='index.html'">home</button>
+        <button onclick="location.href='qiskit.html'">Qiskit PhaseOracle</button>
+
+        <h1>qisket實驗</h1>
+        <!-- 
+        <div class="card">
+            <div class="input-group">
+                <input type="text" id="oracleInput" placeholder="輸入真值表 (如: 0110)" value="0110">
+                <button onclick="askQiskit()">產生量子電路</button>
+            </div>
+            
+            <h4>輸出結果：</h4>
+            <pre id="messageList" style="background: #222; color: #0f0; padding: 10px; overflow-x: auto;">
+                等待輸入中...
+            </pre>
+            <div id="circuitImageContainer" style="margin-top: 20px; text-align: center;">
+                <img id="circuitImg" src="" alt="電路圖將顯示於此" style="max-width: 100%; display: none; border: 1px solid #444;">
+            </div>
+        </div>
+        -->
+    </div>
+
+    <div class="testing">
+
+        <div id="componentPackage">
+            <!-- <div class="gate-wrapper" draggable="true" ondragstart="onDragGate(event, 'target')">
+                <div class="icon-target"></div>
+            </div>
+
+            <div class="gate-wrapper" draggable="true" ondragstart="onDragGate(event, 'control-1')">
+                <div class="icon-control-1"></div>
+            </div>
+
+            <div class="gate-wrapper" draggable="true" ondragstart="onDragGate(event, 'control-0')">
+                <div class="icon-control-0"></div>
+            </div>
+            <small style="font-size: 10px; color: #000000;">拖曳元件</small> -->
+        </div>
+
+        <div id="workspace">
+            <div id="toolbar">
+                <span>input</span>
+                <input type="string" id="problemInput" value="[0,2,3,4,5,6,7,1]">
+                <span>want output</span>
+                <input type="string" id="wantOutput" value="[1,0,3,2,5,7,4,6]">
+                <button onclick="turnToPy()">開始迭代</button>
+                <button style="background: #444;" onclick="clearCanvas()">清空畫布</button>
+            </div>
+            <div id="canvas-container"></div>
+        </div>
+    </div>
+
+</body>
+</html>
